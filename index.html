@@ -1,0 +1,520 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>快速报修-极客修</title>
+        <meta name="keywords" content="" />
+        <meta name="Description" content="" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta http-equiv="Expires" CONTENT="0">
+        <meta http-equiv="Cache-Control" CONTENT="no-cache, no-store">
+        <meta http-equiv="Pragma" CONTENT="no-cache">
+            <link rel="shortcut icon" href="http://rs.jikexiu.com/resources/images/faviconie.ico" />
+            <link rel="stylesheet" type="text/css" href="style/mobile_common.css">
+            <link rel="stylesheet" type="text/css" href="style/mobile_index.css">
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/mobile_bidding_jikexiu.js"></script>
+            <script type="text/javascript" src="js/touchScroll.js"></script>
+		 
+        <script type="text/javascript">
+            window.ctx="";
+            window.resourcePath = "http://rs.jikexiu.com";
+        </script>
+    </head>
+
+    <body>
+        <section class="container">
+<script type="text/javascript" src="http://rs.jikexiu.com/appresources/js/touchScroll.js"></script>
+<section class="container">
+	<header id="header" class="sizing">
+		<a class="btn_arr" href="javascript:history.back();" title="返回"><s></s></a>
+		<p>快速报修</p>
+	</header>
+	<section id="main">
+		<article class="quick_repair">
+		    
+		    <input type="hidden" name="model" id="model">
+		    <input type="hidden" name="malfunction" id="malfunction">
+		    <input type="hidden" id="comb_province" name="province">
+			<input type="hidden" id="cityId" name="cityId">
+			<input type="hidden" id="distId" name="distId">
+			<input type="hidden" id="support_home_repair_city_id" value="208,76,201,77,75,322,203,78,116,290,267,237,233,219,200,198,184,170,152,136,135,124,115,98,87,74,73,38,3,2,236,1,">
+			<div style="display: none;" id="City_Door_Range_div">
+		    {"208":"上门范围：惠城区，其他区域可与工程师约中间点","76":"上门范围：市区内，超出上门范围可与工程师约中间位置","201":"上门范围：香洲区、金湾区、斗门区","77":"上门范围：钟楼区、新北区、武进区、戚墅堰区，超出上门范围内可与工程师约中间位置。","75":"上门范围：无锡主城内，超出上门范围可与工程师约市内中间位置","322":"上门范围：银川主城区内","203":"上门范围：禅城区及南海区桂城街道辖区内。其他区域，顺德、三水、高明和南海除桂城街道辖区以外可以与工程师约中间点。","78":"上门范围：苏州主城区，可与工程师约定上门地点","116":"上门范围：厦门市区内，超出范围可与工程师约中间点","290":"上门范围：西安城区，超出范围可与工程师约中间点","267":"上门范围：盘龙、西山、五华、官渡区，超出范围可与工程师约中间点","237":"上门范围：三环路以内，地铁1号线全线，2号线部分站点，天府软件园。超出范围可与工程师约中间点","233":"上门范围：龙华区、美兰区、秀英区、琼山区，超出范围可与工程师约中间点","219":"上门范围：南宁主城区，超出范围可与工程师约中间点","200":"上门范围：特区内，南山区、福田区、罗湖区、盐田区；特区外，龙华新区、龙岗区、宝安区（仅石岩街道除外）。石岩和深圳其他区域可以与工程师约中间点。","198":"上门范围：白云区、天河区、黄埔区、越秀区、海珠区、荔湾区以及番禺区地铁沿线三公里内。如下区域可与工程师约中间点:萝岗区、南沙区、花都区、从化、增城","184":"上门范围：二环线以内，超出范围可与工程师约中间点","170":"上门范围：三环以内，超出范围可与工程师约中间点","152":"上门范围：郑州市区，超出范围可与工程师约中间点","136":"上门范围：地铁环线，超出范围可与工程师约中间点","135":"上门范围：历下区、市中区、槐荫区、天桥区、历城区、高新区等绕城调整以内，超出范围可与工程师约定上门地点","124":"上门范围：东湖区、西湖区、老城区，超出范围可与工程师约中间点","115":"上门范围：福州市城区内，超出范围可与工程师约中间点","98":"上门范围：二环以内，超出范围可与工程师约中间点","87":"上门范围：上城区、下城区、江干区、滨区江、西湖区、拱墅区内，超出范围可与工程师约中间点","74":"上门范围：鼓楼、玄武、秦淮、建邺、雨花台区，超出范围可与工程师约中间点","73":"上门范围：中环路以内；中环以外可约地址站附近、地铁9号线，以及5号线下半段；浦东新区6号线、2号线、12号线沿线；","38":"上门范围：大连中山区、西岗区、沙河口区，超出范围可与工程师约中间点","3":"上门范围：石家庄二环以内，超出范围可与工程师约中间点","2":"上门范围：天津市区、塘沽区内，超出范围可与工程师约中间点","236":"上门范围：主城区、内环高速以内、大学城等地区，可与工程师约定上门地点","1":"上门范围：五环以内，五环外包括上地、回龙观、通州片区。超出范围可与工程师约中间点" }
+		    </div>
+			<ul>
+					<input type="hidden" name="brand" id="brand">
+					<li class="s_brand">选择品牌</li>
+							
+				
+				<li class="s_model">选择机型</li>
+				<li class="s_fault">添加故障</li>
+					<li class="selectArea">广东<u></u></li>
+				
+				<li class="input">
+					<input type="text" name="userName" id="userName" placeholder="您的姓名" class="txt">
+				</li>
+				<li class="input textareabox newtextarea">
+					<textarea placeholder="请详细填写上门维修地址或设备回寄地址" name="address" id="address"></textarea>
+				</li>
+				<li class="input">
+						<input type="tel" name="mobile" id="mobilePhone" placeholder="请输入能够联系到您的电话" class="txt">
+				</li>
+				<li class="input textareabox newtextarea">
+					<textarea id="describe" name="describe" placeholder="您可以详细描述手机故障或其他要求（选填）"></textarea>
+				</li>				
+				<p id="quick_remark">提示：工作时间（8:00-22:00）内将有来自重庆区号023的电话与您联系确认详情！</p>
+			</ul>
+			<p class="but_box"><a href="javascript:;" class="repairBut" id="submitOrder">提交</a>报价:<font id="device_fault_price">选择故障后查看</font></p>
+			
+		</article>
+	</section>
+</section>
+<!-- 品牌选择 -->
+<div class="bodybg"></div>
+<div class="lxfs_lay brandlay_lay" style="display:" id="brandlay_lay">
+	<h3 class="select_tit">请选择</h3>
+	<div class="wra" id="brandlay">
+		<div class="scroller">
+			<ul>
+                        <li brandId="8" class="selected" >苹果</li>
+                        <li brandId="12"  >华为</li>
+                        <li brandId="10"  >小米</li>
+                        <li brandId="11"  >三星</li>
+                        <li brandId="14"  >魅族</li>
+                        <li brandId="19"  >乐视</li>
+                        <li brandId="13"  >努比亚</li>
+                        <li brandId="16"  >vivo</li>
+                        <li brandId="17"  >OPPO</li>
+			</ul>
+		</div>		
+	</div>
+</div>
+<!-- 选择型号 -->
+<div class="lxfs_lay modellay_lay" style="display:" id="modellay_lay" >
+	<h3 class="select_tit">请选择</h3>
+	<div class="wra" id="modellay">
+		<div class="scroller">
+			<ul>
+			</ul>
+		</div>		
+	</div>
+</div>
+<!-- 故障选择 -->
+<div class="lxfs_lay faultlay_lay" id="faultlay_lay">
+	<h3 class="select_tit">请选择</h3>
+	<div class="wra" id="faultlay">
+		<div class="scroller">
+			<ul>
+			</ul>
+		</div>		
+	</div>
+</div>
+<!-- 地区选择 -->
+<div class="lxfs_lay selectArea_lay">
+	<h3 class="select_tit">请选择</h3>
+	<div class="wra" id="wrapper">
+		<div class="scroller province">
+			<ul>				
+			</ul>
+		</div>		
+	</div>
+	<div class="wra" id="" style="display:none">	
+		<div class="scroller city">
+			<ul>						
+			</ul>
+		</div>		
+	</div>
+	<div class="wra" id="" style="display:none">
+		<div class="scroller area">
+			<ul>							
+			</ul>
+		</div>		
+	</div>
+</div>
+<div class="laybox">
+	<div class="repair_success_lay">
+		<dl class="title"><!-- <dt class="close"></dt> --><dd>报修成功</dd></dl>
+		<div class="box">
+			<p class="t_left">报修成功，我们会尽快和您取得联系，请保持电话通畅!</p>
+			<a href="tel:4008-112-112" class="button scuss">联系客服</a><a href="/?orderSource=0&wd=" class="button que">返回首页</a>
+		</div>
+	</div>
+</div>
+
+ <script type="text/javascript">
+    
+    function faultlay(){
+		var t=new TouchScroll({id:'faultlay','width':5,'opacity':0.7,color:'#555',minLength:20});    
+	}
+	function brandlay(){
+		var t=new TouchScroll({id:'brandlay','width':5,'opacity':0.7,color:'#555',minLength:20});    
+	}
+	function modellay(){
+		var t=new TouchScroll({id:'modellay','width':5,'opacity':0.7,color:'#555',minLength:20});    
+	}
+	
+	function getModel(brandId){
+	
+	$('#modellay').remove();
+	$('#modellay_lay').append('<div class="wra" id="modellay"><div class="scroller"><ul></ul></div></div>');
+			
+			
+	 $('#model').val('');
+	 $('#malfunction').val('');
+	 $(".s_model").text('选择机型');
+	 $(".s_fault").text('添加故障');
+	 $.post(ctx+"/order/quick/getModelByBrand",{brandId:brandId},function(d){
+        var data=JSON.parse(d);
+        var devices=data.deviceList;
+        $('#modellay ul').empty();
+        $('#faultlay ul').empty();
+        for(var i=0;i<devices.length;i++){
+         	$('#modellay ul').append("<li data-deviceid='"+devices[i].id+"'>"+devices[i].model+"</li>");
+        }
+		event.stopPropagation();
+     });
+	}
+	
+	
+	function MaxMe(o) {  
+		if (window.navigator.userAgent.indexOf("Firefox") > -1) {		 
+			o.style.height = o.scrollTop + o.scrollHeight + "px";			
+		}else {		  
+			if (o.scrollTop > 0) o.style.height = o.scrollTop + o.scrollHeight + "px";			
+		}  
+	}
+	
+	function getMalfunctionByDeviceId(deviceId){
+		$('#faultlay').remove();
+		$('#faultlay_lay').append('<div class="wra" id="faultlay"><div class="scroller"><ul></ul></div></div>');
+				
+		$.post(ctx+"/order/quick/getMalFunctionByModelId",{deviceId:deviceId},function(d){
+	        var data=JSON.parse(d);
+	        var malfunctionList=data.malfunctionList;
+	        $('#faultlay ul').empty();
+	        for(var i=0;i<malfunctionList.length;i++){
+	         	$('#faultlay ul').append("<li data-malfunctionid='"+malfunctionList[i].id+"'>"+malfunctionList[i].name+"</li>");
+	        }
+	    });
+	}
+	
+	jQuery(function($){
+		//文本域输入效果
+		$(".newtextarea").find("textarea").bind("input propertychange",function(){
+			MaxMe(this);			
+		});
+	
+	   //选择品牌
+		$(".s_brand").click(function(){
+			$(".bodybg").show();
+			$(".brandlay_lay").show(0,function(){
+				brandlay();
+				$("#brandlay").find("li").click(function(){
+					$(".brandlay_lay,.bodybg").hide();
+					var brand_name = $(this).text();
+					var brand_id=$(this).attr("brandid");
+					$("[name='brand']").val(brand_id);
+					$(".s_brand").text(brand_name);
+					$(".s_brand").css("color","#1c7efb");
+					getModel(brand_id);
+				});
+			});
+		});		
+		
+			//选择型号
+		$(".s_model").click(function(){
+			if($('.s_brand').html()=='选择品牌'){
+		      $(".s_brand").css("color","red");
+		      return;
+		    }
+			$(".bodybg").show();
+			$(".modellay_lay").show(0,function(){
+				modellay();
+				$("#modellay").find("li").click(function(){
+					$(".modellay_lay,.bodybg").hide();
+					var model_name = $(this).text();
+					$(".s_model").text(model_name);
+					var deviceId=$(this).data('deviceid');
+					$('#model').val(deviceId);
+					$(".s_model").css("color","#1c7efb");
+					getMalfunctionByDeviceId(deviceId);
+				});
+			});
+		});
+		
+		
+		//故障选择
+		$(".s_fault").click(function(){
+		
+			if($('.s_brand').html()=='选择品牌'){
+		      $(".s_brand").css("color","red");
+		      return;
+		    }
+		    
+		    if($('.s_model').html()=='选择机型'){
+		      $(".s_model").css("color","red");
+		      return;
+		    }
+		    
+			$(".bodybg").show();			
+			$(".faultlay_lay").show(0,function(){
+				faultlay();
+				$("#faultlay").find("li").click(function(){
+					$(".faultlay_lay,.bodybg").hide();
+					var fault_name = $(this).text();
+					$(".s_fault").text(fault_name);
+					$("[name='malfunction']").val(fault_name);
+					
+					var deviceId=$('#model').val();
+					var malfunctionId=$(this).data('malfunctionid');
+					var param = {deviceId:deviceId};
+					var malfunctionList=[];
+					
+					$.post(window.ctx+"/order/getDeviceSolution.json", {deviceId : deviceId},function(data){
+					    var malfunctionList=data.malfunctionList;
+					    for(var i=0;i<malfunctionList.length; ++i) {
+			                var mf = malfunctionList[i];
+			                if(mf.fid == malfunctionId) {
+			                    param["malIds["+i+"]"]=mf.id;
+			                }
+			            }
+			           $.post(window.ctx+"/order/getSolutionMalfunction.json",param,estimate, "JSON");
+					}, "JSON");
+				 
+				});
+			});
+		});
+		
+	
+		//估算价格 报价
+		function estimate(data){
+		    var priceArr =[];
+		    if(data.solutionMalfunctionList) {
+		        if (data.solutionMalfunctionList.length != 0) {
+		            for(var i=0;i<data.solutionMalfunctionList.length ;i++){
+		                if(data.solutionMalfunctionList[i].price>0)
+		                    priceArr.push(parseFloat(data.solutionMalfunctionList[i].price));
+		            }
+		            priceArr =  priceArr.sort(sortNumber);
+		            console.log(priceArr);
+		            console.log('--------------------');
+		            if (priceArr.length==0 || priceArr[0]<=0) {//全部是待检测或者排序之后第一个报价为0
+		                $("#device_fault_price").html("选择故障后查看");
+		            } else {
+		                $("#device_fault_price").html("￥"+priceArr[0]+" 起");
+		            }
+		        }
+		    }
+		}
+		
+		function sortNumber(a,b) 
+		{ 
+		return a - b 
+		}
+	
+	
+		$(".bodybg").click(function(){
+			$(".brandlay_lay,.faultlay_lay,.modellay_lay").hide();
+		});
+		
+		
+	    
+
+		$(".repairBut").click(function(){
+		  if($(this).hasClass("repairBut")) {
+          var  orderSource='0';
+          var  wd='';
+          var  origin='7';
+		  var  province = $.trim($("[name='province']").val());
+		  var  city = $.trim($("[name='cityId']").val());
+		  var  area = $.trim($("[name='distId']").val());
+          var  brandId =  $.trim($("[name='brand']").val());
+          var  model= $.trim($("[name='model']").val());
+          var  malfunction=$.trim($("[name='malfunction']").val());
+          var  userName=$.trim($("[name='userName']").val());
+          var  mobilePhone = $.trim($("#mobilePhone").val());
+          var  describe = $.trim($("#describe").val());
+          var address =$.trim($("#address").val());
+		  if(brandId == ''||brandId==null) {
+                $(".s_brand").click();
+                return false;
+      	  }
+      	  
+      	  if(model==''||model==null){
+      	        $(".s_model").click();
+                return false;
+      	  }
+      	  
+      	  if(malfunction==''||malfunction==null){
+      	        $(".s_fault").click();
+                return false;
+      	  }
+      	  
+      	  if(city == ''||city==null) {
+              $(".selectArea").click();
+              return false;
+          }
+          
+          if(userName == ''||userName==null) {
+              $("#userName").val('');
+	          $("#userName").attr("placeholder", "请输入您的姓名");
+	          $("#userName").one("blur", function(){
+	             $("#userName").attr("placeholder", "请输入您的姓名");
+	          });
+	          $("#userName").focus().addClass("tips");
+	          return false;
+          }
+      	  
+  		  if(mobilePhone =='' || mobilePhone == null || !/^[1]{1}\d{10}$/.test(mobilePhone)){
+	          $("#mobilePhone").val('');
+	          $("#mobilePhone").attr("placeholder", "请输入正确的手机号码");
+	          $("#mobilePhone").one("blur", function(){
+	             $("#mobilePhone").attr("placeholder", "请输入能联系到您的手机号");
+	          });
+	          $("#mobilePhone").focus().addClass("tips");
+	          return false;
+          }
+          
+
+          if(!/^1[3-8]{1}\d{9}$/.test(mobilePhone)) {
+              $("#mobilePhone").focus().addClass("tips");
+              return false;
+          }
+          
+          
+		
+	      $("#submitOrder").addClass("but-gray").removeClass("repairBut").html("提交订单...");
+	      var param = { brand : brandId,
+	                    model : model,
+	                    malfunction : malfunction,
+	                    province : province,
+	                    city : city,
+	                    area : area,
+	                    userName : userName,
+	                    mobile : mobilePhone,
+	                    describe:describe,
+	                    orderSource:orderSource,
+	                    wd:wd,
+	                    origin:origin,
+	                    address:address
+                      };
+		
+          $.ajax({
+                  url : ctx+"/order/quick/saveQuickRepair",
+                  data:param,
+                  type:"POST",
+                  success: function (data) {
+                      if(data) {
+                          switch(data.status) {
+                              case 0 :
+                                  $(".repair_success_lay").parent(".laybox").show();
+                                  $("#submitOrder").addClass("repairBut").removeClass("but-gray").html("提交成功");
+
+                                  /*百度转化追踪代码*/
+                                  var elscript = document.createElement("script");
+                                  elscript.setAttribute("type","text/javascript");
+                                  elscript.setAttribute("src","http://rs.jikexiu.com/resources/js/bd_zhuanhuazhuizong.js");
+                                  document.body.appendChild(elscript);
+
+                                  break;
+                              case 1 :
+                                  alert(data.msg);
+                                  break;
+                          }
+                      }
+                  },
+                  dataType:"JSON"
+          });
+	 }
+});
+
+	});
+</script>
+
+           <footer id="footer">
+                <p><a href="tel:4008-112-112" id="tell">客服电话：4008-112-112</a></p>
+            </footer>
+            
+        </section>
+    </body>
+    <script>
+        //根据渠道修改官网电话
+        var orderSource = '0';
+        if(null == orderSource) orderSource='0';
+        if(null != orderSource && orderSource !='0' ){
+            if(orderSource == '87'){
+
+                $("#tell_index").attr("href","tel:400-882-9757");
+                $("#tell_index_bottom").attr("href","tel:400-882-9757");
+                $("#tell").attr("href","tel:400-882-9757");
+                $("#tell").text("客服电话 400-882-9757");
+                $("#tell_index_div").text("客服电话 400-882-9757");
+                $("#tell_index_bottom").text("客服电话 400-882-9757");
+            }else if(orderSource == '58'){
+
+                $("#tell_index").attr("href","tel:400-600-2564");
+                $("#tell_index_bottom").attr("href","tel:400-600-2564");
+                $("#tell").attr("href","tel:400-600-2564");
+                $("#tell").text("客服电话 400-600-2564");
+                $("#tell_index_div").text("客服电话 400-600-2564");
+                $("#tell_index_bottom").text("客服电话 400-600-2564");
+            }else if(orderSource == '59'){
+                $("#tell_index").attr("href","tel:400-891-7656");
+                $("#tell_index_bottom").attr("href","tel:400-891-7656");
+                $("#tell").attr("href","tel:400-891-7656");
+                $("#tell").text("客服电话 400-891-7656");
+                $("#tell_index_div").text("客服电话 400-891-7656");
+                $("#tell_index_div").text("客服电话 400-891-7656");
+                $("#tell_index_bottom").text("客服电话 400-891-7656");
+            }else if(orderSource == '8'){
+                $("#tell_index").attr("href","tel:400-807-6521");
+                $("#tell_index_bottom").attr("href","tel:400-807-6521");
+                $("#tell").attr("href","tel:400-807-6521");
+                $("#tell").text("客服电话 400-807-6521");
+                $("#tell_index_div").text("客服电话 400-807-6521");
+                $("#tell_index_bottom").text("客服电话 400-807-6521");
+            }else if(orderSource == '89'){
+                $("#tell_index").attr("href","tel:400-668-0129");
+                $("#tell_index_bottom").attr("href","tel:400-668-0129");
+                $("#tell").attr("href","tel:400-668-0129");
+                $("#tell").text("客服电话 400-668-0129");
+                $("#tell_index_div").text("客服电话 400-668-0129");
+                $("#tell_index_bottom").text("客服电话 400-668-0129");
+            }else if(orderSource == '96'){
+                $("#tell_index").attr("href","tel:400-612-0187");
+                $("#tell_index_bottom").attr("href","tel:400-612-0187");
+                $("#tell").attr("href","tel:400-612-0187");
+                $("#tell").text("客服电话 400-612-0187");
+                $("#tell_index_div").text("客服电话 400-612-0187");
+                $("#tell_index_bottom").text("客服电话 400-612-0187");
+            }else if(orderSource == '186'){
+                $("#tell_index").attr("href","tel:400-855-0969");
+                $("#tell_index_bottom").attr("href","tel:400-855-0969");
+                $("#tell").attr("href","tel:400-855-0969");
+                $("#tell").text("客服电话 400-855-0969");
+                $("#tell_index_div").text("客服电话 400-855-0969");
+                $("#tell_index_bottom").text("客服电话 400-855-0969");
+            }else if(orderSource == '185'){
+                $("#tell_index").attr("href","tel:400-605-1214");
+                $("#tell_index_bottom").attr("href","tel:400-605-1214");
+                $("#tell").attr("href","tel:400-605-1214");
+                $("#tell").text("客服电话 400-605-1214");
+                $("#tell_index_div").text("客服电话 400-605-1214");
+                $("#tell_index_bottom").text("客服电话 400-605-1214");
+            }else if(orderSource == '229'){
+                $("#tell_index").attr("href","tel:400-801-0193");
+                $("#tell_index_bottom").attr("href","tel:400-801-0193");
+                $("#tell").attr("href","tel:400-801-0193");
+                $("#tell").text("客服电话 400-801-0193");
+                $("#tell_index_div").text("客服电话 400-801-0193");
+                $("#tell_index_bottom").text("客服电话 400-801-0193");
+            }
+        }
+    </script>
+    <!-- 引入百度统计代码 -->
+    <script type="text/javascript" src="http://rs.jikexiu.com/resources/js/baiduStatistic.js"></script>
+
+</html>
